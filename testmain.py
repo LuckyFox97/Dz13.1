@@ -1,7 +1,6 @@
 import pytest
 from main import Category, Product
 
-
 @pytest.fixture
 def sample_product():
     return Product("Наушники", "Беспроводные наушники", 9999, 10)
@@ -16,8 +15,8 @@ def test_total_categories(sample_category):
     assert Category.total_categories == 1
 
 
-def test_unique_products(sample_category, sample_product):
-    assert sample_product.title in Category.unique_products
+def test_unique_products():
+    assert Category.unique_products == 1
 
 
 def test_category_init(sample_category):
@@ -31,3 +30,11 @@ def test_product_init(sample_product):
     assert sample_product.description == "Беспроводные наушники"
     assert sample_product.price == 9999
     assert sample_product.quantity_in_stock == 10
+
+
+def test_count_products(sample_category):
+    assert len(sample_category.products) == 1
+
+
+if __name__ == "__main__":
+    pytest.main()

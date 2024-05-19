@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09eb7a41-b950-4e0f-9e00-90e068775821" name="Changes" comment="New">
-      <change afterPath="$PROJECT_DIR$/testmain.py" afterDir="false" />
+    <list default="true" id="09eb7a41-b950-4e0f-9e00-90e068775821" name="Changes" comment="New fix">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firsttask.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testmain.py" beforeDir="false" afterPath="$PROJECT_DIR$/testmain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +42,13 @@
     "Python tests.Python tests for testmain.TestCategoryProduct.executor": "Run",
     "Python tests.Python tests for testmain.TestCategoryProduct.test_category_initialization.executor": "Run",
     "Python tests.Python tests for testmain.TestCategoryProduct.test_product_initialization.executor": "Run",
+    "Python tests.Python tests for testmain.test_count_products.executor": "Run",
+    "Python tests.Python tests for testmain.test_count_unique_products.executor": "Run",
+    "Python tests.Python tests for testmain.test_product_init.executor": "Run",
+    "Python tests.Python tests for testmain.test_total_categories.executor": "Run",
     "Python tests.Python tests in testmain.py.executor": "Run",
     "Python.firsttask.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
@@ -71,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for testmain.TestCategoryProduct" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for testmain.test_count_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Dz13.1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,11 +88,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testmain.TestCategoryProduct&quot;" />
+      <option name="_new_target" value="&quot;testmain.test_count_products&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for testmain.TestCategoryProduct.test_category_initialization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for testmain.test_count_unique_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Dz13.1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,11 +103,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testmain.TestCategoryProduct.test_category_initialization&quot;" />
+      <option name="_new_target" value="&quot;testmain.test_count_unique_products&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for testmain.TestCategoryProduct.test_product_initialization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for testmain.test_product_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Dz13.1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +118,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testmain.TestCategoryProduct.test_product_initialization&quot;" />
+      <option name="_new_target" value="&quot;testmain.test_product_init&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -135,9 +141,9 @@
       <list>
         <item itemvalue="Python tests.Python tests in testmain.py" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests for testmain.TestCategoryProduct.test_product_initialization" />
-        <item itemvalue="Python tests.Python tests for testmain.TestCategoryProduct.test_category_initialization" />
-        <item itemvalue="Python tests.Python tests for testmain.TestCategoryProduct" />
+        <item itemvalue="Python tests.Python tests for testmain.test_count_unique_products" />
+        <item itemvalue="Python tests.Python tests for testmain.test_product_init" />
+        <item itemvalue="Python tests.Python tests for testmain.test_count_products" />
       </list>
     </recent_temporary>
   </component>
@@ -165,11 +171,28 @@
       <option name="project" value="LOCAL" />
       <updated>1715635444862</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New fix">
+      <option name="closed" value="true" />
+      <created>1715642128216</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715642128216</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New fix">
+      <option name="closed" value="true" />
+      <created>1715642321811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715642321811</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New" />
-    <option name="LAST_COMMIT_MESSAGE" value="New" />
+    <MESSAGE value="New fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="New fix" />
   </component>
 </project>
