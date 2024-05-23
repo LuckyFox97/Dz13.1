@@ -87,3 +87,6 @@ ipython_config.py
 
 # .idea
 .idea
+
+# .idea/
+.idea/
