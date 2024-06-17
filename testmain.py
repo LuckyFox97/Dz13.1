@@ -40,5 +40,17 @@ def test_price_setter(sample_product):
     assert sample_product.price == 9999
 
 
+def test_product_str_method(sample_product):
+    """Тестирование строкового представления продукта"""
+    expected_str = f"{sample_product.name}, {sample_product.price} руб. Остаток: {sample_product.quantity} шт."
+    assert str(sample_product) == expected_str
+
+def test_product_addition(sample_product):
+    other_product = Product("Чехол для наушников", 500, 3)
+    total_value = sample_product + other_product
+    expected_value = (sample_product.price * sample_product.quantity) + (other_product.price * other_product.quantity)
+    assert total_value == expected_value, f"Ожидаемое значение: {expected_value}, полученное значение: {total_value}"
+
+
 if __name__ == "__main__":
     pytest.main()
