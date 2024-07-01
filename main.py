@@ -19,6 +19,8 @@ class Category:
 
     def add_product(self, product):
         """Метод для добавления продукта в список продуктов категории"""
+        if not isinstance(product, Product):
+            raise ValueError
         self._products.append(product)
         Category._total_products += product.quantity
 
@@ -52,7 +54,11 @@ class Product:
         """
         Возвращает стоимость продукта, умноженную на количество.
         """
-        return self.price * self.quantity + other.price * other.quantity
+        if type(self) is type(other):
+            return self.price * self.quantity + other.price * other.quantity
+        else:
+            raise TypeError
+
 
     @property
     def price(self):
@@ -69,3 +75,41 @@ class Product:
     def create_product(cls, name, price, quantity=0):
         """Класс-метод для создания продукта"""
         return cls(name, price, quantity)
+
+
+class Smartphone(Product):
+    """Класс для добавления смартфонов"""
+    performance: int
+    model: str
+    memory: int
+    color: str
+
+    def __init__(self, name, price, quantity, performance, model, memory, color):
+        super().__init__(name, price, quantity)
+        self.performance = performance
+        self.model = model
+        self.memory = memory
+        self.color = color
+
+    def __str__(self):
+        return f"{self.name} {self.model}, {self._price} руб. Остаток: {self.quantity} шт., " \
+               f"Производительность: {self.performance}, Память: {self.memory}Гб, Цвет: {self.color}"
+
+
+class LawnGrass(Product):
+    """Класс для добавления газонной травы"""
+    country: str
+    germination_period: str
+    color: str
+
+    def __init__(self, name, price, quantity, country, germination_period, color):
+        super().__init__(name, price, quantity)
+        self.country = country
+        self.germination_period = germination_period
+        self.color = color
+
+    def __str__(self):
+        return f"{self.name}, {self._price} руб. Остаток: {self.quantity} шт., " \
+               f"Страна-производитель: {self.country}, Срок прорастания: {self.germination_period}, Цвет: {self.color}"
+
+
